@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+
+{%block contents%}
+    <form action="" method="post">
+        {%csrf_token%}
+        <table>
+          {{forms.as_table}}
+        </table>
+        <button type="submit" class="btn btn-warning">Kirim</button>
+    </form>
+
+{%endblock%}
